@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <header></header>
+
+  <main class="main">
+
+    <div class="bgCards">
+      <div class="cards">
+        <div class="card__front">
+          <img src="./assets/img/card-logo.svg" alt="">
+          <p class="card__front__number">0000 0000 0000 0000</p>
+          <div class="card__front__footer">
+            <p id="cardName">Jane Appleseed</p>
+            <p><span id="monthCard">00</span>/<span id="yearCard">00</span></p>
+          </div>
+        </div>
+        <div class="card__back">
+          <p class="card__back__number">000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgForm">
+
+      <div class="form__container">
+        <form class="form">
+          <div class="form__input__section">
+            <label for="name">Cardholder Name</label>
+            <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed" minlength="3" maxlength="20">
+            <small></small>
+          </div>
+          <div class="form__input__section">
+            <label for="number">Card Number</label>
+            <input type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16">
+            <small></small>
+          </div>
+          <div class="form__footer form__input__section">
+            <div class="form__dates">
+              <label for="date">Exp. Date (MM/YY)</label>
+              <div class="form__footer__container__date">
+                <div>
+                  <input type="number" name="month" id="month" placeholder="MM">
+                  <div>
+                    <small></small>
+                  </div>
+                </div>
+                <div>
+                  <input type="number" name="year" id="year" placeholder="YY">
+                  <div>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__cvc">
+              <label for="cvc">CVC</label>
+              <div>
+                <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+                <div>
+                  <small></small>
+                </div> 
+              </div>
+            </div>  
+          </div>
+          <button type="submit" id="btnSubmit" class="btn">Confirm</button>
+        </form>
+      </div>
+      
+      <div class="successMessageForm visibility">
+        <div class="checkIcon">&#10003</div>
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button type="submit" id="btnConfirm" class="btn">Continue</button>
+      </div>
+    
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="attribution">
+      <h4>Challenge by Frontend Mentor. <br> Coded by Tatiane Tinoco.</h4>
+      <p><a href="https://github.com/tatianetinoco" target="_blank" rel="noopener noreferrer">Github</a></p>
+      <p><a href="https://www.linkedin.com/in/tatianetinoco/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+    </div>
+  </footer>
+ <script src="./assets/js/script.js"></script>
+</body>
+</html>
